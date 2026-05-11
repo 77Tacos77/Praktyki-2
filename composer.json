@@ -1,0 +1,13 @@
+{ 
+    "name": "praktyka/praktyka-mvc",
+    "description": "To jest projekt testowy",
+    "type": "project",
+    "autoload": {
+        "psr-4":{
+            "Praktyka\\": "Praktyka/"
+        }
+    },
+
+    "require": {}
+
+}
