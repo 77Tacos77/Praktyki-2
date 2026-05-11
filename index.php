@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-use Praktyka\App;
+use src\App;
 $myapp = new App();
 ?>
 

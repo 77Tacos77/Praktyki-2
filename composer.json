@@ -1,13 +1,15 @@
 { 
-    "name": "praktyka/praktyka-mvc",
+    "name": "praktyka/src",
     "description": "To jest projekt testowy",
     "type": "project",
     "autoload": {
         "psr-4":{
-            "Praktyka\\": "Praktyka/"
+            "src\\": "src/"
         }
     },
 
-    "require": {}
+    "require": {
+        "doctrine/orm": "^3.6"
+    }
 
 }
