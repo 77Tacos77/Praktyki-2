@@ -17,4 +17,5 @@ return array(
     'Pdo\\Sqlite' => $vendorDir . '/symfony/polyfill-php84/Resources/stubs/Pdo/Sqlite.php',
     'ReflectionConstant' => $vendorDir . '/symfony/polyfill-php84/Resources/stubs/ReflectionConstant.php',
     'RoundingMode' => $vendorDir . '/symfony/polyfill-php84/Resources/stubs/RoundingMode.php',
+    '©' => $vendorDir . '/symfony/cache/Traits/ValueWrapper.php',
 );

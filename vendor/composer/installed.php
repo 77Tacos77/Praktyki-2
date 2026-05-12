@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'praktyka/praktyka-mvc',
+        'name' => 'praktyka/src',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'fa4b892c18c8a9431b2dd12b5f32be0e05485cea',
+        'reference' => '05416d179b50c3b93511eca0521e8a9ad2948fa0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -91,10 +91,10 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'praktyka/praktyka-mvc' => array(
+        'praktyka/src' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'fa4b892c18c8a9431b2dd12b5f32be0e05485cea',
+            'reference' => '05416d179b50c3b93511eca0521e8a9ad2948fa0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -108,6 +108,12 @@
             'install_path' => __DIR__ . '/../psr/cache',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'psr/cache-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '2.0|3.0',
+            ),
         ),
         'psr/container' => array(
             'pretty_version' => '2.0.2',
@@ -131,6 +137,36 @@
             'dev_requirement' => false,
             'provided' => array(
                 0 => '1.0|2.0|3.0',
+            ),
+        ),
+        'psr/simple-cache-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0|2.0|3.0',
+            ),
+        ),
+        'symfony/cache' => array(
+            'pretty_version' => 'v7.4.10',
+            'version' => '7.4.10.0',
+            'reference' => '8c5fbb4b5bc7a878f7ce66f1b7e29653c404984b',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/cache',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/cache-contracts' => array(
+            'pretty_version' => 'v3.7.0',
+            'version' => '3.7.0.0',
+            'reference' => '225e8a254166bd3442e370c6f50145465db63831',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/cache-contracts',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/cache-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.1|2.0|3.0',
             ),
         ),
         'symfony/console' => array(

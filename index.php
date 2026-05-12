@@ -1,7 +1,10 @@
 <?php
 require 'vendor/autoload.php';
+$entityManager = require __DIR__ . '/src/config/doctrine.php';
+
 use src\App;
-$myapp = new App();
+
+$myapp = new App($entityManager);
 ?>
 
 

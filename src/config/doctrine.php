@@ -1,18 +1,24 @@
 <?php
-use Doctrine\ORM\Doctrine\ORM\EntityManager;
+require_once __DIR__ . '/../../vendor/autoload.php';
+
+use Doctrine\DBAL\DriverManager;
+use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\ORMSetup;
 
 $config = ORMSetup::createAttributeMetadataConfiguration(
-    paths: [__DIR__ . '/src'],
+    paths: [__DIR__ . '/../'],
     isDevMode: true
 );
 
 $conn = [
-    'driver' => 'pdo_sqlite',
+    'driver' => 'pdo_mysql',
     'host' => 'localhost',
-    'db' => 'baza',
+    'dbname' => 'praktyka',
     'user' => 'root',
     'password' => '',
 ];
 
-$entityManager = EntityManager::create($conn, $config);
+$connection = DriverManager::getConnection($conn, $config);
+$entityManager = new EntityManager($connection, $config);
+
+return $entityManager;
