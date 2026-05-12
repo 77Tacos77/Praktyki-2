@@ -10,4 +10,4 @@ $myapp = new App($entityManager);
 
  <!-- Zrób osobno klasę i całość załaduj przez autoloader. Poczytaj proszę o composer -->
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=1">
