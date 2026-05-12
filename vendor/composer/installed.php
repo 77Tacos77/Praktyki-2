@@ -3,7 +3,7 @@
         'name' => 'praktyka/src',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '2339b7f956843215dd697e5b046891ae35685636',
+        'reference' => '2c6e32bc6db05ef07922f41633cc019f049d8ec7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -121,7 +121,7 @@
         'praktyka/src' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '2339b7f956843215dd697e5b046891ae35685636',
+            'reference' => '2c6e32bc6db05ef07922f41633cc019f049d8ec7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -192,6 +192,15 @@
             'provided' => array(
                 0 => '1.0|2.0|3.0',
             ),
+        ),
+        'smarty/smarty' => array(
+            'pretty_version' => 'v5.8.0',
+            'version' => '5.8.0.0',
+            'reference' => '78d259d3b971c59a0cd719c270cc5cbb740c36a7',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../smarty/smarty',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'symfony/cache' => array(
             'pretty_version' => 'v7.4.10',

@@ -16,6 +16,7 @@ class ComposerStaticInitca197247fd0be7be817499a834316ded
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '9d2b9fc6db0f153a0a149fefb182415e' => __DIR__ . '/..' . '/symfony/polyfill-php84/bootstrap.php',
+        'c15d4a1253e33e055d05e547c61dcb71' => __DIR__ . '/..' . '/smarty/smarty/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -50,6 +51,7 @@ class ComposerStaticInitca197247fd0be7be817499a834316ded
             'Symfony\\Component\\Cache\\' => 24,
             'Symfony\\Bundle\\FrameworkBundle\\' => 31,
             'Symfony\\Bridge\\Doctrine\\' => 24,
+            'Smarty\\' => 7,
         ),
         'P' =>
         array (
@@ -179,6 +181,10 @@ class ComposerStaticInitca197247fd0be7be817499a834316ded
         'Symfony\\Bridge\\Doctrine\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/doctrine-bridge',
+        ),
+        'Smarty\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/smarty/smarty/src',
         ),
         'Psr\\Log\\' =>
         array (
