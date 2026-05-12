@@ -1,13 +1,14 @@
 <?php
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Doctrine\DBAL\DriverManager;
-use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\ORMSetup;
+use Doctrine\ORM\EntityManager;
+use Doctrine\DBAL\DriverManager;
 
 $config = ORMSetup::createAttributeMetadataConfiguration(
-    paths: [__DIR__ . '/../Entity'],
-    isDevMode: true
+    [__DIR__ . '/Models'],
+    true
 );
 
 $conn = [
@@ -19,6 +20,5 @@ $conn = [
 ];
 
 $connection = DriverManager::getConnection($conn, $config);
-$entityManager = new EntityManager($connection, $config);
 
-return $entityManager;
+return new EntityManager($connection, $config);
